@@ -1,0 +1,330 @@
+@font-face {
+    font-family: font-1;
+    src: url(font/Ubuntu/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: font-2;
+    src: url(font/made_tommy/MADE\ TOMMY.otf);
+}
+
+@font-face {
+    font-family: font-3;
+    src: url(font/made_tommy/MADE\ TOMMY\ 2.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #27215c;
+
+}
+
+
+.maindiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    height: 95%;
+    width: 95%;
+    box-shadow: 0 0 30px 5px;
+    background-color: white;
+}
+
+.goback {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    transform: scale(1.5);
+    color: #36308E;
+    transition: transform .3s;
+}
+
+.goback:hover {
+    transform: scale(1.8);
+}
+
+.logdiv {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+    width: 30%;
+    height: 90%;
+
+}
+
+.vcode {
+    position: absolute;
+    right: 0%;
+    border-radius: 90px 0 0 90px;
+    height: 100%;
+    width: 60%;
+    background-image: url(image/vcode.png);
+    background-size: cover;
+}
+
+.title-text {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    font-size: 55px;
+    font-family: font-1;
+    color: #36308E;
+}
+
+.text {
+    position: absolute;
+    top: 34%;
+    left: 2%;
+    font-size: 20px;
+    color: #36308E;
+    font-family: font-2;
+}
+
+#emailinput {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 3px solid #36308E;
+    border-radius: 10px;
+    background-color: none;
+    font-size: 20px;
+    width: 80%;
+    height: 4%;
+    padding: 1%;
+    font-family: font-2;
+    line-height: 60px;
+    outline: none;
+}
+
+#emailinput::placeholder {
+    font-family: font-1;
+    font-size: 15px;
+    line-height: 60px;
+}
+
+/* checkbox ---------------------------------------------------------------- */
+
+.switch {
+    position: absolute;
+    top: 51%;
+    left: 1%;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    border-radius: 200%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #36308E;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(17px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* checkbox ---------------------------------------------------------------- */
+
+
+.Remembertext {
+    position: absolute;
+    top: 51.3%;
+    left: 12.5%;
+    font-size: 17px;
+    color: #36308E;
+    font-weight: bold;
+    font-family: font-2;
+}
+
+.mainbutton {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 10px;
+    background-color: #36308E;
+    color: white;
+    width: 70%;
+    padding: 4% 0%;
+    font-family: font-1;
+    font-size: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.mainbutton:hover {
+    box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hr {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    color: gray;
+}
+
+.or {
+    position: absolute;
+    top: 72.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: white;
+    border-radius: 50%;
+    font-family: font-1;
+    color: gray;
+    padding: 2%;
+
+}
+
+.Google-button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.Apple-button {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.error {
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 10%;
+    color: red;
+    font-family: font-3;
+}
+
+/* ------------------------------vcode------------------------------------ */
+.innervcode {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 35%;
+}
+
+.vcode-text {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white;
+    font-weight: bold;
+    font-family: font-1;
+    font-size: 30px;
+    width: 90%;
+}
+
+.Input-verification-div {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5%;
+    font-size: 25px;
+    height: 27%;
+    width: 90%;
+}
+
+.Input-verification {
+    user-select: none;
+    text-align: center;
+    padding: 1.5%;
+    font-size: 55px;
+    font-family: font-1;
+    background-color: rgba(255, 255, 255, 0.585);
+    border: none;
+    border-radius: 10px;
+    width: 15%;
+    margin: 1%;
+    outline: none;
+}
+
+
+.Input-verification::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#timer {
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid white;
+    position: absolute;
+    top: 65%;
+    left: 7%;
+    font-size: 60px;
+    font-family: font-2;
+    color: white;
+    width: 50%;
+}
+
+#timer p {
+    display: inline;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Log in</title>
+</head>
+
+<body>
+    <div class="maindiv">
+        <i class="fa fa-left-long goback"></i>
+        <div class="logdiv">
+            <p class="title-text">welcome</p>
+            <p class="text">
+                Enter your email to receive a one-time passcode.
+            </p>
+            <input type="email" name="" id="emailinput" placeholder="Your email . . . " y>
+            <p class="error" id="error">Your email is not correct !</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <p class="Remembertext">Remember me for 30 days</p>
+            <button class="mainbutton" id="mainbutton">Code sent !</button>
+            <hr class="hr">
+            <p class="or">or</p>
+
+            <button class="Google-button mainbutton">Sign in with Google</button>
+            <button class="Apple-button mainbutton">Sign in with Apple ID</button>
+        </div>
+        <div class="vcode">
+            <div class="innervcode" id="innervcode">
+                <p class="vcode-text">Enter the one-time password</p>
+                <div class="Input-verification-div">
+                    <input type="number" class="Input-verification" maxlength="1">
+                    <input type="number" class="Input-verification" maxlength="1">
+                    <input type="number" class="Input-verification" maxlength="1">
+                    <input type="number" class="Input-verification" maxlength="1">
+                    <input type="number" class="Input-verification" maxlength="1">
+                </div>
+                <div id="timer">
+                    <p id="mins">01</p>
+                    <p>:</p>
+                    <p id="seconds">0</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
